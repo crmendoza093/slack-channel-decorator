@@ -1,0 +1,90 @@
+{
+  "name": "slack-channel-decorator",
+  "displayName": "Slack Channel Decorator",
+  "description": "Decodes and decorates Slack Channel IDs with their names inline and detailed tooltips on hover.",
+  "version": "0.1.1",
+  "publisher": "crmendoza093",
+  "license": "MIT",
+  "icon": "images/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/crmendoza093/slack-channel-decorator"
+  },
+  "homepage": "https://github.com/crmendoza093/slack-channel-decorator#readme",
+  "bugs": {
+    "url": "https://github.com/crmendoza093/slack-channel-decorator/issues"
+  },
+  "keywords": [
+    "slack",
+    "channel",
+    "decorator",
+    "inline",
+    "hover",
+    "tooltip",
+    "devops",
+    "productivity"
+  ],
+  "galleryBanner": {
+    "color": "#1e1e2e",
+    "theme": "dark"
+  },
+  "markdown": "github",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other",
+    "Visualization"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "slack-channel-decorator.clearCache",
+        "title": "Slack Channels: Clear Cache"
+      },
+      {
+        "command": "slack-channel-decorator.setToken",
+        "title": "Slack Channels: Set Bot Token"
+      }
+    ],
+    "configuration": {
+      "title": "Slack Channel Decorator",
+      "properties": {
+        "slackChannelDecorator.extensionsToScan": {
+          "type": "array",
+          "default": [
+            "yml",
+            "yaml",
+            "rb",
+            "env",
+            "json",
+            "js",
+            "ts"
+          ],
+          "description": "File extensions to scan for Slack Channel IDs"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/node": "^18.x",
+    "@types/vscode": "^1.80.0",
+    "typescript": "^5.x"
+  },
+  "dependencies": {
+    "axios": "^1.13.5",
+    "lru-cache": "^11.2.6"
+  }
+}
