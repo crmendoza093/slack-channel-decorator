@@ -1,7 +1,7 @@
 <p align="center">
-  <img src="https://img.shields.io/visual-studio-marketplace/v/usuario.slack-channel-decorator?style=flat-square&color=4ec9b0&label=Version" alt="Version" />
-  <img src="https://img.shields.io/visual-studio-marketplace/i/usuario.slack-channel-decorator?style=flat-square&color=4ec9b0&label=Installs" alt="Installs" />
-  <img src="https://img.shields.io/visual-studio-marketplace/r/usuario.slack-channel-decorator?style=flat-square&color=4ec9b0&label=Rating" alt="Rating" />
+  <img src="https://img.shields.io/visual-studio-marketplace/v/crmendoza093.slack-channel-decorator?style=flat-square&color=4ec9b0&label=Version" alt="Version" />
+  <img src="https://img.shields.io/visual-studio-marketplace/i/crmendoza093.slack-channel-decorator?style=flat-square&color=4ec9b0&label=Installs" alt="Installs" />
+  <img src="https://img.shields.io/visual-studio-marketplace/r/crmendoza093.slack-channel-decorator?style=flat-square&color=4ec9b0&label=Rating" alt="Rating" />
   <img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="License" />
 </p>
 
@@ -45,7 +45,7 @@ Your Slack Bot Token is stored using VS Code's built-in **Secret Storage API** â
 
 ### 1. Install the Extension
 
-Install from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=usuario.slack-channel-decorator), or search for **"Slack Channel Decorator"** in the Extensions panel.
+Install from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=crmendoza093.slack-channel-decorator), or search for **"Slack Channel Decorator"** in the Extensions panel.
 
 ### 2. Create a Slack Bot Token
 
