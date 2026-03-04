@@ -2,7 +2,7 @@
   "name": "slack-channel-decorator",
   "displayName": "Slack Channel Decorator",
   "description": "Decodes and decorates Slack Channel IDs with their names inline and detailed tooltips on hover.",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "publisher": "crmendoza093",
   "license": "MIT",
   "icon": "images/icon.png",
