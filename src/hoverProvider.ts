@@ -35,11 +35,7 @@ export class SlackHoverProvider implements vscode.HoverProvider {
 
         markdown.appendMarkdown(`### 💬 ${info.name}\n`);
         markdown.appendMarkdown(`--- \n`);
-        markdown.appendMarkdown(`**ID:** \`${info.id}\` | **Type:** ${typeIcon} ${typeText}\n\n`);
-
-        if (info.purpose) {
-            markdown.appendMarkdown(`> * ${info.purpose} *\n\n`);
-        }
+        markdown.appendMarkdown(`**ID:** \`${info.id}\` | **Type:** ${typeIcon} ${typeText}\n`);
 
         return new vscode.Hover(markdown, range);
     }
